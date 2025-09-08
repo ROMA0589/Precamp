@@ -23,7 +23,7 @@ export default function Layout({ children, title = 'Premocidade' }: LayoutProps)
         <title key="title">{pageTitle}</title>
         <meta name="description" content="Programa de Premocidade da Aliança Espírita Evangélica" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.png" type="image/png" sizes="any" />
       </Head>
 
       <header className="header">

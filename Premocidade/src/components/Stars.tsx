@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 
 const Stars = () => {
+  // Generate fixed positions to avoid server/client mismatch
+  const starPositions = useMemo(() => {
+    const positions = [];
+    // Use deterministic positions instead of Math.random()
+    for (let i = 0; i < 50; i++) {
+      const x = (i * 37) % 100; // Pseudo-random but deterministic
+      const y = (i * 23) % 100;
+      const delay = (i * 0.1) % 3;
+      positions.push({ x, y, delay });
+    }
+    return positions;
+  }, []);
+
   return (
     <div className="stars">
-      {[...Array(50)].map((_, i) => (
+      {starPositions.map((position, i) => (
         <div
           key={i}
           className={`star star--${i % 3 === 0 ? 'small' : i % 3 === 1 ? 'medium' : 'large'}`}
           style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-            animationDelay: `${Math.random() * 3}s`
+            left: `${position.x}%`,
+            top: `${position.y}%`,
+            animationDelay: `${position.delay}s`
           }}
         />
       ))}
