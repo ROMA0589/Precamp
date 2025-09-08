@@ -7,6 +7,10 @@ const nextConfig = {
     path: '',
   },
   trailingSlash: true,
+  // Improve SEO
+  poweredByHeader: false,
+  // Better compression
+  compress: true,
 }
 
 module.exports = nextConfig

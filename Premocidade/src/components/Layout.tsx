@@ -21,9 +21,15 @@ export default function Layout({ children, title = 'Premocidade' }: LayoutProps)
     <div className="layout">
       <Head>
         <title key="title">{pageTitle}</title>
-        <meta name="description" content="Programa de Premocidade da Aliança Espírita Evangélica" />
+        <meta name="description" content="Programa de Premocidade da Aliança Espírita Evangélica - Aprenda os ensinamentos de Jesus através de atividades interativas e dinâmicas" />
+        <meta name="keywords" content="premocidade, precamp, espiritismo, Jesus, educação espiritual, atividades educativas" />
+        <meta name="author" content="Aliança Espírita Evangélica" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content="Programa de Premocidade da Aliança Espírita Evangélica" />
+        <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.png" type="image/png" sizes="any" />
+        <link rel="canonical" href="https://roma0589.github.io/Precamp/" />
       </Head>
 
       <header className="header">
