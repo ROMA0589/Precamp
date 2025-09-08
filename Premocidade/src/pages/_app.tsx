@@ -3,6 +3,7 @@ import '../styles/globals.css'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import Head from 'next/head'
+import ErrorBoundary from '../components/ErrorBoundary'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -26,12 +27,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [router])
 
   return (
-    <>
+    <ErrorBoundary>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Component {...pageProps} />
-    </>
+    </ErrorBoundary>
   )
 }
 

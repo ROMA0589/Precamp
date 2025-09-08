@@ -9,16 +9,6 @@ export default function Home() {
       <div className="home">
         <div className="background-images">
           <div className="image-wrapper">
-            <div className="image-container jesus">
-              <Image
-                src="/images/jesus.png"
-                alt="Jesus"
-                width={1500}
-                height={2000}
-                priority
-                quality={100}
-              />
-            </div>
             <div className="image-container kardec">
               <Image
                 src="/images/kardec.png"
@@ -31,29 +21,29 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <h1>Bem-vindo a Página Précamp</h1>
+        <h1>Bem-vindo à Página Précamp</h1>
         <p className="intro">
           Descubra os ensinamentos de Jesus através de atividades interativas e dinâmicas.
         </p>
-        <div className="grid">
-          <Link href="/ensinamentos" className="card">
-            <div className="icon">📚</div>
+        <nav className="grid" role="navigation" aria-label="Seções principais">
+          <Link href="/ensinamentos" className="card" aria-label="Ir para seção de Ensinamentos">
+            <div className="icon" aria-hidden="true">📚</div>
             <h2>Ensinamentos</h2>
             <p>Aprenda as lições de Jesus de forma simples e prática.</p>
           </Link>
           
-          <Link href="/atividades" className="card">
-            <div className="icon">🎮</div>
+          <Link href="/atividades" className="card" aria-label="Ir para seção de Atividades">
+            <div className="icon" aria-hidden="true">🎮</div>
             <h2>Atividades</h2>
             <p>Jogos e atividades interativas para aprender brincando</p>
           </Link>
 
-          <Link href="/cronogramas" className="card">
-            <div className="icon">📅</div>
+          <Link href="/cronogramas" className="card" aria-label="Ir para seção de Cronogramas">
+            <div className="icon" aria-hidden="true">📅</div>
             <h2>Cronogramas</h2>
             <p>Acompanhe o planejamento das aulas e atividades</p>
           </Link>
-        </div>
+        </nav>
       </div>
       <style jsx>{`
         .home {
@@ -89,13 +79,8 @@ export default function Home() {
           transition: opacity 0.3s ease;
         }
 
-        .jesus {
-          transform: translateX(-70%) scale(1);
-          bottom: -10%;
-        }
-
         .kardec {
-          transform: translateX(60%) scale(0.8);
+          transform: translateX(0%) scale(0.8);
           bottom: -10%;
         }
 
