@@ -12,13 +12,14 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: white;
+  background: url('/images/kardec.png') no-repeat center center fixed !important;
+  background-size: cover !important;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  /* Fondo ya aplicado en html, no repetir aquí */
 }
 
 a {
