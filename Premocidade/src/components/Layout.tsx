@@ -4,8 +4,8 @@ import Logo from './Logo';
 import Stars from './Stars';
 
 interface LayoutProps {
-  children: ReactNode;
-  title?: string;
+  readonly children: ReactNode;
+  readonly title?: string;
 }
 
 export default function Layout({ children, title = 'Premocidade' }: LayoutProps) {
@@ -47,7 +47,7 @@ export default function Layout({ children, title = 'Premocidade' }: LayoutProps)
         <p>© {yearDisplay} Premocidade - Precamp - Feito de <span className="heart">&#10084;</span></p>
       </footer>
 
-      <style jsx>{`
+      <style>{`
         .layout {
           min-height: 100vh;
           display: flex;

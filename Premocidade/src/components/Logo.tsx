@@ -17,7 +17,7 @@ const Logo = () => {
         </div>
         <span className="logo-text">Précamp</span>
       </div>
-      <style jsx>{`
+      <style>{`
         .logo-link {
           text-decoration: none;
           display: flex;
