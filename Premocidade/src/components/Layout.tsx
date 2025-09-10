@@ -26,6 +26,9 @@ export default function Layout({ children, title = 'Premocidade' }: LayoutProps)
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
 
+      {/* Fondo de Kardec */}
+      <div className="background-kardec"></div>
+
       <header className="header">
         <nav>
           <div className="logo-container">
@@ -52,8 +55,25 @@ export default function Layout({ children, title = 'Premocidade' }: LayoutProps)
           min-height: 100vh;
           display: flex;
           flex-direction: column;
+          position: relative;
+          overflow: hidden;
         }
-
+        .background-kardec {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          z-index: 0;
+          background: url('/images/kardec.png') no-repeat center center;
+          background-size: cover;
+          opacity: 0.18;
+          pointer-events: none;
+        }
+        .header, .main, .footer {
+          position: relative;
+          z-index: 1;
+        }
         .header {
           background: rgba(0, 0, 0, 0.5);
           backdrop-filter: blur(10px);
@@ -62,7 +82,6 @@ export default function Layout({ children, title = 'Premocidade' }: LayoutProps)
           top: 0;
           z-index: 100;
         }
-
         nav {
           max-width: 1200px;
           margin: 0 auto;
@@ -70,21 +89,17 @@ export default function Layout({ children, title = 'Premocidade' }: LayoutProps)
           justify-content: center;
           align-items: center;
         }
-
         .logo-container {
           padding: 0.5rem;
           transition: transform 0.3s ease;
         }
-
         .logo-container:hover {
           transform: scale(1.05);
         }
-
         .main {
           flex: 1;
           padding: 1rem;
         }
-
         .footer {
           background: rgba(0, 0, 0, 0.5);
           color: white;
@@ -92,10 +107,12 @@ export default function Layout({ children, title = 'Premocidade' }: LayoutProps)
           padding: 1rem;
           margin-top: auto;
         }
-
         @media (max-width: 480px) {
           .content-wrapper {
             padding: 1rem;
+          }
+          .background-kardec {
+            background-size: contain;
           }
         }
       `}</style>
