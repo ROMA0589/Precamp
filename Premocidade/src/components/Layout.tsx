@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
-import { Logo } from './Logo';
+import Logo from './Logo';
 import Stars from './Stars';
 
 interface LayoutProps {
