@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "node app.js",
+    "start": "next start",
     "export": "next export",
     "deploy": "next build && next export"
   },
@@ -24,10 +24,6 @@
     "@types/prop-types": "^15.7.14",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
-<<<<<<< HEAD
-    "typescript": "5.9.2"
-=======
     "typescript": "^5.2.2"
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
   }
 }

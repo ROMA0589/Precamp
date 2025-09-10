@@ -12,7 +12,6 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: #1a1a1a;
   color: white;
 }
 
@@ -68,7 +67,7 @@ nav a:hover {
   background: rgba(255, 255, 255, 0.85);
   padding: 1.2rem;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
+ 
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   position: fixed;
   width: 100%;
@@ -456,45 +455,33 @@ h1 {
   left: 0;
   width: 100%;
   height: 100px;
-<<<<<<< HEAD
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%2343cea2'/%3E%3C/svg%3E");
-=======
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23ffffff'/%3E%3C/svg%3E");
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
   background-size: 1600px 100px;
   animation: wave 10s linear infinite;
   transform: translate3d(0, 0, 0);
   opacity: 0.8;
+
 }
 
 .wave1 {
   animation: wave 10s linear infinite;
   z-index: 3;
   opacity: 0.5;
-<<<<<<< HEAD
   filter: drop-shadow(0 0 20px #43cea2);
-=======
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
 }
 
 .wave2 {
   animation: wave2 15s linear infinite;
   z-index: 2;
   opacity: 0.3;
-<<<<<<< HEAD
   filter: drop-shadow(0 0 20px #185a9d);
-=======
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
 }
 
 .wave3 {
   animation: wave 20s linear infinite;
   z-index: 1;
   opacity: 0.2;
-<<<<<<< HEAD
   filter: drop-shadow(0 0 20px #81d4fa);
-=======
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
 }
 
 @keyframes wave {
@@ -617,8 +604,7 @@ h1 {
 .activity-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-<<<<<<< HEAD
-  border-radius: 20px;
+  border-radius: 20px; /* Use the larger radius for consistency */
   padding: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
@@ -629,21 +615,9 @@ h1 {
 }
 
 .activity-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px); /* Use the larger translate for consistency */
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 10px 40px rgba(124, 155, 255, 0.3);
-=======
-  border-radius: 15px;
-  padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
-}
-
-.activity-card:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 5px 30px rgba(124, 155, 255, 0.2);
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
 }
 
 .activity-card h2 {
@@ -655,7 +629,6 @@ h1 {
 .activity-card ul {
   list-style: none;
   padding: 0;
-<<<<<<< HEAD
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   width: 100%;
@@ -668,62 +641,12 @@ h1 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-=======
-  margin-top: 1rem;
-}
-
-.activity-card li {
-  padding: 0.5rem 0;
-  color: #f0f0f0;
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .activity-card li:last-child {
   border-bottom: none;
 }
-
-.atividades-header {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.atividades-header h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  background: linear-gradient(45deg, #4a90e2, #f5a623);
-  -webkit-background-clip: text;
-  background-clip: text;
-<<<<<<< HEAD
-/* Removed duplicate .activity-card selector. Styles merged above. */
-=======
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 30px rgba(74, 144, 226, 0.3);
-}
-
-.activity-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
-  display: flex;
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-<<<<<<< HEAD
-/* Removed duplicate .activity-card:hover selector. Styles merged above. */
-=======
-.activity-card:hover {
-  transform: translateY(-10px);
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 10px 40px rgba(124, 155, 255, 0.3);
-}
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
 
 .activity-icon {
   font-size: 3rem;
@@ -740,30 +663,12 @@ h1 {
 
 .activity-card p {
   color: #f0f0f0;
-<<<<<<< HEAD
-/* Removed duplicate .activity-card ul selector. Merged styles above. */
-  width: 100%;
-/* Removed duplicate .activity-card li selector. Styles merged above. */
-=======
   margin-bottom: 1.5rem;
 }
 
-.activity-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 1.5rem 0;
-  width: 100%;
-  text-align: left;
-}
+/* Removed duplicate .activity-card ul block */
 
-.activity-card li {
-  padding: 0.8rem 0;
-  color: #f0f0f0;
-  display: flex;
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
-  align-items: center;
-  gap: 0.5rem;
-}
+/* Removed duplicate .activity-card li block */
 
 .bullet {
   color: var(--secondary-color);
@@ -876,18 +781,10 @@ h1 {
 .game-instruction {
   color: #fff;
   text-align: center;
-<<<<<<< HEAD
   margin: 1rem auto;
   font-size: 1.1rem;
   opacity: 0.8;
   max-width: 600px;
-=======
-  margin: 1rem 0;
-  font-size: 1.1rem;
-  opacity: 0.8;
-  max-width: 600px;
-  margin: 1rem auto;
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
 }
 
 @media (max-width: 768px) {
@@ -933,17 +830,7 @@ h1 {
   box-shadow: 0 0 20px rgba(74, 144, 226, 0.4);
 }
 
-<<<<<<< HEAD
-/* Removed duplicate .game-instruction selector. Styles merged above. */
-=======
-.game-instruction {
-  color: #fff;
-  text-align: center;
-  margin: 1rem 0;
-  font-size: 1.1rem;
-  opacity: 0.8;
-}
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
+/* Removed duplicate .game-instruction selector */
 
 .quiz-container {
   max-width: 800px;
@@ -1243,14 +1130,9 @@ h1 {
 .cronogramas-container {
   max-width: 1200px;
   margin: 80px auto 0;
-<<<<<<< HEAD
   padding: 2rem;
   min-height: 100vh;
   color: white;
-=======
-  padding: 20px;
-  min-height: 100vh;
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
 }
 
 .aulas-grid {
@@ -1271,27 +1153,13 @@ h1 {
 
 .aula-card:hover {
   transform: translateY(-5px);
-<<<<<<< HEAD
   box-shadow: 0 5px 30px rgba(124, 155, 255, 0.2);
   background: rgba(255, 255, 255, 0.15);
-=======
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
 }
 
 .aula-numero {
   background: var(--primary-color);
   color: white;
-<<<<<<< HEAD
-  min-width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 0.9rem;
-  padding: 0 0.5rem;
-=======
   padding: 5px 10px;
   border-radius: 50%;
   min-width: 30px;
@@ -1299,90 +1167,8 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
-  font-weight: bold;
-}
-
-.aula-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0 0;
-}
-
-.aula-card li {
-  padding: 8px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
-}
-
-<<<<<<< HEAD
-/* Removed duplicate .aula-card li:last-child selector. Styles are defined above. */
-
-/* Removed duplicate .aulas-grid selector. See definition above at line 1158. */
-
-/* Duplicate .aula-card block removed. Styles are defined above. */
-/* Merged .aula-card:hover styles above. Duplicate removed. */
-=======
-.aula-card li:last-child {
-  border-bottom: none;
-}
-
-.cronogramas-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  color: white;
-}
-
-.aulas-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem;
-}
-
-.aula-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
-}
-
-.aula-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 30px rgba(124, 155, 255, 0.2);
-  background: rgba(255, 255, 255, 0.15);
-}
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
-
-.aula-card h3 {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  color: var(--secondary-color);
-}
-<<<<<<< HEAD
-/* Removed duplicate .aula-numero selector. Styles merged above. */
-
-/* Duplicate .aula-card ul selector removed. Styles are defined above at line 1193. */
-
-/* Duplicate .aula-card li block removed. See definition above at line 1199. */
-=======
-
-.aula-numero {
-  background: var(--primary-color);
-  color: white;
-  min-width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
   font-size: 0.9rem;
-  padding: 0 0.5rem;
+  font-weight: bold;
 }
 
 .aula-card ul {
@@ -1396,7 +1182,6 @@ h1 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   color: #f0f0f0;
 }
->>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
 
 .aula-card li:last-child {
   border-bottom: none;
