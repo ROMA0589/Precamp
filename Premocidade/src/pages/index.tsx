@@ -40,6 +40,21 @@ export default function Home() {
             <h2>Baixar Aulas</h2>
             <p>Faça download das aulas diretamente do Google Drive</p>
           </a>
+            <Link href="/cronogramas" className="card">
+              <div className="icon">🗓️</div>
+              <h2>Cronogramas</h2>
+              <p>Veja o programa completo de aulas</p>
+            </Link>
+            <Link href="/atividades" className="card">
+              <div className="icon">🎲</div>
+              <h2>Atividades</h2>
+              <p>Explore atividades e jogos educativos</p>
+            </Link>
+            <Link href="/jogos" className="card">
+              <div className="icon">🕹️</div>
+              <h2>Jogos</h2>
+              <p>Divirta-se com jogos interativos</p>
+            </Link>
         </div>
       </div>
       <style>{`
