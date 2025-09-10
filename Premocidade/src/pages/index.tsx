@@ -1,26 +1,12 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Home() {
   return (
     <Layout>
       <div className="home">
-        <div className="background-images">
-          <div className="image-wrapper">
-            <div className="image-container jesus">
-              <Image
-                src="/images/jesus.png"
-                alt="Jesus"
-                width={1500}
-                height={2000}
-                priority
-                quality={100}
-              />
-            </div>
-          </div>
-        </div>
+        {/* Imágenes de fondo removidas. Kardec solo como fondo global */}
         <h1>Bem-vindo à Página Précamp</h1>
         <p className="intro intro-small">
           Descubra os ensinamentos de Jesus através de atividades interativas e dinâmicas.
