@@ -46,14 +46,9 @@ export default function Home() {
               <p>Veja o programa completo de aulas</p>
             </Link>
             <Link href="/atividades" className="card">
-              <div className="icon">🎲</div>
-              <h2>Atividades</h2>
-              <p>Explore atividades e jogos educativos</p>
-            </Link>
-            <Link href="/jogos" className="card">
-              <div className="icon">🕹️</div>
-              <h2>Jogos</h2>
-              <p>Divirta-se com jogos interativos</p>
+              <div className="icon">🎲🕹️</div>
+              <h2>Atividades e Jogos</h2>
+              <p>Explore atividades educativas e jogue online</p>
             </Link>
         </div>
       </div>
