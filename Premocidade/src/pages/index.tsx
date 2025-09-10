@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <Layout>
       <div className="home">
-        {/* Imágenes de fondo removidas. Kardec solo como fondo global */}
         <h1>Bem-vindo à Página Précamp</h1>
         <p className="intro intro-small">
           Descubra os ensinamentos de Jesus através de atividades interativas e dinâmicas.
