@@ -32,7 +32,11 @@ export default function Home() {
           </div>
         </div>
         <h1>Bem-vindo a Página Précamp</h1>
+<<<<<<< HEAD
         <p className="intro intro-small">
+=======
+        <p className="intro">
+>>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
           Descubra os ensinamentos de Jesus através de atividades interativas e dinâmicas.
         </p>
         <div className="grid">
@@ -53,6 +57,7 @@ export default function Home() {
             <h2>Cronogramas</h2>
             <p>Acompanhe o planejamento das aulas e atividades</p>
           </Link>
+<<<<<<< HEAD
 
             <a href="https://drive.google.com/drive/folders/1m8RBEfuDdJg9VkGcjqL2Wv4bE5CYbbtw" className="card" target="_blank" rel="noopener noreferrer">
               <div className="icon">⬇️</div>
@@ -62,12 +67,20 @@ export default function Home() {
         </div>
       </div>
       <style>{`
+=======
+        </div>
+      </div>
+      <style jsx>{`
+>>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
         .home {
           text-align: center;
           padding: 2rem;
           position: relative;
           overflow: hidden;
+<<<<<<< HEAD
           background: rgba(255,255,255,0.3);
+=======
+>>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
         }
 
         .background-images {
@@ -94,10 +107,13 @@ export default function Home() {
           position: absolute;
           opacity: 0.4;
           transition: opacity 0.3s ease;
+<<<<<<< HEAD
           max-width: 55vw;
           height: auto;
           min-width: 250px;
           max-height: 90vh;
+=======
+>>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
         }
 
         .jesus {
@@ -106,7 +122,11 @@ export default function Home() {
         }
 
         .kardec {
+<<<<<<< HEAD
           transform: translateX(20%) scale(0.9);
+=======
+          transform: translateX(60%) scale(0.8);
+>>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
           bottom: -10%;
         }
 
@@ -120,27 +140,41 @@ export default function Home() {
         }
 
         .card {
+<<<<<<< HEAD
           background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+=======
+          background: rgba(255, 255, 255, 0.1);
+>>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
           border-radius: 20px;
           padding: 2rem;
           flex: 1;
           min-width: 300px;
           text-align: center;
           text-decoration: none;
+<<<<<<< HEAD
           color: #e0f7fa;
           backdrop-filter: blur(10px);
           box-shadow: 0 2px 8px rgba(33, 150, 243, 0.15);
+=======
+          color: white;
+          backdrop-filter: blur(10px);
+>>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
           transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .card:hover {
           transform: translateY(-5px);
+<<<<<<< HEAD
           box-shadow: 0 10px 20px rgba(33, 150, 243, 0.25);
+=======
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+>>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
         }
 
         .icon {
           font-size: 3rem;
           margin-bottom: 1rem;
+<<<<<<< HEAD
           color: #43cea2;
         }
 
@@ -149,21 +183,30 @@ export default function Home() {
           max-width: 75vw;
           min-width: 160px;
         }
+=======
+        }
+
+        @media (max-width: 1024px) {
+>>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
           .grid {
             grid-template-columns: repeat(2, 1fr);
           }
         }
 
         @media (max-width: 768px) {
+<<<<<<< HEAD
         .image-container {
           max-width: 95vw;
           min-width: 100px;
         }
+=======
+>>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
           .grid {
             grid-template-columns: 1fr;
             padding: 1rem;
           }
         }
+<<<<<<< HEAD
 
         .intro-small {
           font-size: 1rem;
@@ -175,6 +218,8 @@ export default function Home() {
           color: #185a9d;
         }
         }
+=======
+>>>>>>> 2a5984b547d1efc890697add46cb393e6c58ce0d
       `}</style>
     </Layout>
   );
