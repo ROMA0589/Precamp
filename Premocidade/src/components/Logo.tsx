@@ -6,16 +6,14 @@ const Logo = () => {
   return (
     <>
       <Link href="/" className="logo-link">
-        <div className="logo-wrapper">
-          <div className="image-container">
-            <Image
-              src="/images/logo.png"
-              alt="Précamp Logo"
-              width={50}
-              height={50}
-              priority
-            />
-          </div>
+        <div className="logo-wrapper" style={{display: 'flex', alignItems: 'center', flexDirection: 'row', gap: '0.8rem'}}>
+          <Image
+            src="/images/logo.png"
+            alt="Précamp Logo"
+            width={50}
+            height={50}
+            priority
+          />
           <span className="logo-text">Précamp</span>
         </div>
       </Link>
