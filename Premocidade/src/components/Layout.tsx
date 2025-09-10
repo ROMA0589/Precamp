@@ -26,8 +26,6 @@ export default function Layout({ children, title = 'Premocidade' }: LayoutProps)
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
 
-      {/* Fondo de Kardec */}
-      <div className="background-kardec"></div>
 
       <header className="header">
         <nav>
