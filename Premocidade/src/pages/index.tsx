@@ -45,6 +45,16 @@ export default function Home() {
           overflow: hidden;
           background: rgba(255,255,255,0.3);
         }
+        .home h1 {
+          color: #ffffff;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+          background: linear-gradient(45deg, #ffffff, #e0f7fa);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
         .background-images {
           position: fixed;
           top: 0;
@@ -72,9 +82,11 @@ export default function Home() {
           max-width: 320px;
           margin: 0 auto 1.5rem auto;
           padding: 0.5rem 1rem;
-          background: rgba(33,150,243,0.08);
+          background: rgba(255,255,255,0.9);
           border-radius: 12px;
-          color: #185a9d;
+          color: #1a2435;
+          text-shadow: none;
+          border: 1px solid rgba(255,255,255,0.3);
         }
         .grid {
           display: grid;
