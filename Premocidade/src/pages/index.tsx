@@ -35,6 +35,11 @@ export default function Home() {
               <h2>Atividades e Jogos</h2>
               <p>Explore atividades educativas e jogue online</p>
             </Link>
+            <Link href="/videos" className="card">
+              <div className="icon">🎬</div>
+              <h2>Vídeos Educativos</h2>
+              <p>Assista vídeos interativos sobre os ensinamentos</p>
+            </Link>
         </div>
       </div>
       <style>{`
@@ -90,11 +95,11 @@ export default function Home() {
         }
         .grid {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           gap: 2rem;
           padding: 2rem;
           margin: 0 auto;
-          max-width: 900px;
+          max-width: 1200px;
         }
         .card {
           background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
