@@ -23,3 +23,13 @@ Puedes ajustar la posición, tamaño y color del botón en el archivo de configu
 
 ## Autor
 ROMA0589
+
+## 🤝 Contribuciones
+
+¡Las contribuciones de código son bienvenidas! Si tienes ideas, mejoras o correcciones, siéntete libre de hacer un fork y enviar un pull request.
+
+- 🛠️ Mejoras y nuevas funciones
+- 🐞 Corrección de errores
+- 📚 Mejoras en la documentación
+
+Por favor, sigue las buenas prácticas y explica brevemente tus cambios. ¡Gracias por ayudar a mejorar este plugin! 🚀
