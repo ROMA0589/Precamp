@@ -1,0 +1,131 @@
+import React from 'react';
+import Layout from '../components/Layout';
+import Link from 'next/link';
+
+export default function Home() {
+  return (
+    <Layout>
+      <div className="home">
+        <h1>Bem-vindo à Página Précamp</h1>
+        <p className="intro intro-small">
+          Descubra os ensinamentos de Jesus através de atividades interativas e dinâmicas.
+        </p>
+        <div className="grid">
+          <Link href="/ensinamentos" className="card">
+            <div className="icon">📚</div>
+            <h2>Ensinamentos</h2>
+          </Link>
+          <a
+            href="https://drive.google.com/drive/folders/1m8RBEfuDdJg9VkGcjqL2Wv4bE5CYbbtw"
+            className="card"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="icon">⬇️</div>
+            <h2>Baixar Aulas</h2>
+            <p>Faça download das aulas diretamente do Google Drive</p>
+          </a>
+            <Link href="/cronogramas" className="card">
+              <div className="icon">🗓️</div>
+              <h2>Cronogramas</h2>
+              <p>Veja o programa completo de aulas</p>
+            </Link>
+            <Link href="/atividades" className="card">
+              <div className="icon">🎲🕹️</div>
+              <h2>Atividades e Jogos</h2>
+              <p>Explore atividades educativas e jogue online</p>
+            </Link>
+            <Link href="/videos" className="card">
+              <div className="icon">🎬</div>
+              <h2>Vídeos Educativos</h2>
+              <p>Assista vídeos interativos sobre os ensinamentos</p>
+            </Link>
+        </div>
+      </div>
+      <style>{`
+        .home {
+          text-align: center;
+          padding: 2rem;
+          position: relative;
+          overflow: hidden;
+          background: rgba(255,255,255,0.3);
+        }
+        .home h1 {
+          color: #ffffff;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+          background: linear-gradient(45deg, #ffffff, #e0f7fa);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .background-images {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: -1;
+          pointer-events: none;
+        }
+        .image-wrapper {
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+        .image-container {
+          position: absolute;
+          opacity: 0.4;
+          transition: opacity 0.3s ease;
+          left: 50%;
+          transform: translateX(-70%) scale(1);
+          bottom: -10%;
+        }
+        .intro-small {
+          font-size: 1rem;
+          max-width: 320px;
+          margin: 0 auto 1.5rem auto;
+          padding: 0.5rem 1rem;
+          background: rgba(255,255,255,0.9);
+          border-radius: 12px;
+          color: #1a2435;
+          text-shadow: none;
+          border: 1px solid rgba(255,255,255,0.3);
+        }
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 2rem;
+          padding: 2rem;
+          margin: 0 auto;
+          max-width: 1200px;
+        }
+        .card {
+          background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+          color: #e0f7fa;
+          backdrop-filter: blur(10px);
+          box-shadow: 0 2px 8px rgba(33, 150, 243, 0.15);
+          border-radius: 20px;
+          padding: 2rem;
+          text-align: center;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+          transform: scale(1.05);
+          box-shadow: 0 10px 20px rgba(33, 150, 243, 0.25);
+        }
+        .icon {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+        }
+        @media (max-width: 1024px) {
+          .grid {
+            grid-template-columns: 1fr;
+            padding: 1rem;
+          }
+        }
+      `}</style>
+    </Layout>
+  );
+}

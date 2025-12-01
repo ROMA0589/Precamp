@@ -2,9 +2,6 @@
 
 Plugin para Rust que agrega un botón en la interfaz para abrir la mochila usando Backpacks v2.x.
 
-## 🛠 Skills
-[![My Skills](https://skillicons.dev/icons?i=java,windows,vscode,nextjs,sql,js,html,css,csharp,python,rust,docker,git,github,linux,react,ts)](https://skillicons.dev)
-
 ## Características
 - Botón cuadrado con imagen de mochila, visible en pantalla.
 - Compatible con Rust 2275 y Backpacks v2.1.8.
