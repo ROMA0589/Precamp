@@ -28,12 +28,12 @@ export default function Cronogramas() {
           {todasLasAulas.map((aula) => (
             <div key={aula.numero} className="aula-card">
               <h3>
-                <span className="aula-numero">{aula.numero}</span>
-                <span style={{marginLeft: '10px'}}>{aula.titulo}</span>
+                <span className="aula-numero" style={{ color: 'red' }}>{aula.numero}</span>
+                <span style={{ marginLeft: '10px', color: 'red' }}>{aula.titulo}</span>
               </h3>
               <ul>
                 {aula.topicos.map((topico, index) => (
-                  <li key={index}>{topico}</li>
+                  <li key={index} style={{ color: 'red' }}>{topico}</li>
                 ))}
               </ul>
             </div>
