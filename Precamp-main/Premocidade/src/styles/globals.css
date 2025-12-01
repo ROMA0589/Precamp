@@ -104,7 +104,12 @@ nav a:hover {
   margin: 0;
   padding: 0;
 }
-
+.aula-card h3,
+.aula-card h3 span,
+.aula-card li {
+  color: red !important;
+}
+.aula-card li {
 .nav-menu li {
   margin: 0;
   padding: 0;
