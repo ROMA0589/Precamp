@@ -1151,20 +1151,20 @@ h1 {
 
 .aula-card {
   line-height: 1.6;
-  background: url('/images/kardec.png') !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  background-attachment: fixed !important;
+  background: linear-gradient(135deg, rgba(30, 60, 114, 0.95), rgba(42, 82, 152, 0.95)) !important;
+  backdrop-filter: blur(10px);
   padding: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .aula-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 30px rgba(124, 155, 255, 0.2);
-  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 30px rgba(124, 155, 255, 0.5);
+  background: linear-gradient(135deg, rgba(42, 82, 152, 0.98), rgba(58, 96, 175, 0.98)) !important;
+  border-color: rgba(124, 155, 255, 0.5);
 }
 
 .aula-numero {
@@ -1189,8 +1189,9 @@ h1 {
 
 .aula-card li {
   padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  color: #f0f0f0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 0.95rem;
 }
 
 .aula-card li:last-child {
