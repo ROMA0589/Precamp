@@ -1168,7 +1168,7 @@ h1 {
 }
 
 .aula-numero {
-  background: var(--primary-color);
+  background: #dc3545;
   color: white;
   padding: 5px 10px;
   border-radius: 50%;
@@ -1181,6 +1181,11 @@ h1 {
   font-weight: bold;
 }
 
+.aula-card h3 {
+  color: #dc3545;
+  font-weight: bold;
+}
+
 .aula-card ul {
   list-style: none;
   padding: 0;
@@ -1190,7 +1195,7 @@ h1 {
 .aula-card li {
   padding: 0.5rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  color: #f0f0f0;
+  color: #dc3545;
 }
 
 .aula-card li:last-child {
