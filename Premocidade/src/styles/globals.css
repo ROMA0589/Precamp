@@ -1,6 +1,7 @@
 :root {
   --primary-color: #4a90e2;
   --secondary-color: #f5a623;
+  --red-color: #dc3545;
   --background-color: #ffffff;
   --text-color: #333333;
   --gradient-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -1168,7 +1169,7 @@ h1 {
 }
 
 .aula-numero {
-  background: #dc3545;
+  background: var(--red-color);
   color: white;
   padding: 5px 10px;
   border-radius: 50%;
@@ -1182,7 +1183,7 @@ h1 {
 }
 
 .aula-card h3 {
-  color: #dc3545;
+  color: var(--red-color);
   font-weight: bold;
 }
 
@@ -1195,7 +1196,7 @@ h1 {
 .aula-card li {
   padding: 0.5rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  color: #dc3545;
+  color: var(--red-color);
 }
 
 .aula-card li:last-child {
